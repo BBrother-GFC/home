@@ -13,7 +13,7 @@
     <span class="sm-hidden">{{ weatherData.weather.windpower }}&nbsp;级</span>
   </div>
   <div class="weather" v-else>
-    <span>天气数据获取失败</span>
+    <span>{{ errorMessage }}</span>
   </div>
 </template>
 
@@ -37,6 +37,9 @@ const weatherData = reactive({
     windpower: null, // 风力级别
   },
 });
+
+// 错误信息
+const errorMessage = ref('');
 
 // 取出天气平均值
 const getTemperature = (min, max) => {
@@ -74,7 +77,7 @@ const getWeatherData = async () => {
       const adCode = await getAdcode(mainKey);
       console.log(adCode);
       if (adCode.infocode !== "10000") {
-        throw "地区查询失败";
+        throw new Error("地区查询失败");
       }
       weatherData.adCode = {
         city: adCode.city,
@@ -90,8 +93,9 @@ const getWeatherData = async () => {
       };
     }
   } catch (error) {
-    console.error("天气信息获取失败:" + error);
-    onError("天气信息获取失败");
+    console.error("天气信息获取失败:", error);
+    errorMessage.value = error.message;
+    onError(error.message);
   }
 };
 
