@@ -14,7 +14,7 @@
   </div>
   <div class="weather" v-else>
 //    <span>{{ errorMessage }}</span>
-    <span>{{ errorMessage }}</span>
+    <span>错误</span>
   </div>
 </template>
 
