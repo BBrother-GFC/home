@@ -1,5 +1,5 @@
 <template>
-  <div class="more-content">您可在此编写任意内容</div>
+  <div class="more-content">被你找到这个地方惹`(*>﹏<*)′</div>
 </template>
 
 <style lang="scss" scoped>
