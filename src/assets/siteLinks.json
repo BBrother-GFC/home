@@ -2,13 +2,13 @@
   {
     "icon": "Blog",
     "name": "博客",
-    "link": "#"
+    "link": "https://blog.gavinchen.top/"
   },
-  {
-    "icon": "Cloud",
-    "name": "网盘",
-    "link": "#"
-  },
+#  {
+#    "icon": "Cloud",
+#    "name": "网盘",
+#    "link": "#"
+#  },
   {
     "icon": "CompactDisc",
     "name": "音乐",
@@ -21,8 +21,8 @@
   },
   {
     "icon": "Book",
-    "name": "网址集",
-    "link": "#"
+    "name": "标签集",
+    "link": "pintree.gavinchen.top"
   },
   {
     "icon": "Fire",
