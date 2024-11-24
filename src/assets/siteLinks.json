@@ -4,11 +4,11 @@
     "name": "博客",
     "link": "https://blog.gavinchen.top/"
   },
-#  {
-#    "icon": "Cloud",
-#    "name": "网盘",
-#    "link": "#"
-#  },
+  {
+    "icon": "Cloud",
+    "name": "网盘",
+    "link": "#"
+  },
   {
     "icon": "CompactDisc",
     "name": "音乐",
